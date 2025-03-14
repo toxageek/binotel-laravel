@@ -1,0 +1,41 @@
+{
+    "name": "toxageek/binotel-laravel",
+    "description": "Laravel-пакет для інтеграції з Binotel API.",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Tofik Haziyev",
+            "email": "toxageek@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Toxageek\\BinotelLaravel\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "optimize-autoloader": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Toxageek\\BinotelLaravel\\BinotelServiceProvider"
+            ],
+            "aliases": [
+                "Toxageek\\BinotelLaravel\\Facades\\Binotel"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.1"
+    }
+}
